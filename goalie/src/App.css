@@ -4,9 +4,10 @@
   gap: 32px;
   padding: 24px;
 
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   min-height: 100vh;
+  /* min-width: 100%; */
 
   background-color: #fafafa;
   background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);

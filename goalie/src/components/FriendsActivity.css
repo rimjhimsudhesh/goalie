@@ -1,0 +1,64 @@
+.friend-activity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Space between active friends and reminders */
+  }
+  
+  .active-friends {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  
+  .reminder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for reminders */
+    gap: 16px;
+  }
+  
+  .friend-activity-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .avatar.green {
+    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/woman-avatar.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .avatar.blue {
+    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/man-avatar.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .avatar.pink {
+    background-color: #E91E63;
+  }
+  
+  .activity-label {
+    font-size: 12px;
+    padding: 2px 8px;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    border-radius: 4px;
+  }
+  
+  .reminder-text {
+    font-size: 14px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

@@ -1,0 +1,19 @@
+.calendar-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.calendar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #888;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}

@@ -1,14 +1,23 @@
-import React from 'react';
-import './Calendar.css';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import '@fullcalendar/core/index.css';
+import '@fullcalendar/daygrid/main.css';
 
-const CalendarView: React.FC = () => {
-    return (
-        <div className="calendar-container">
-            <div className="calendar-placeholder">
-                📅 Calendar View
-            </div>
-        </div>
-    )
+interface CalendarViewProps {
+  events: { title: string; date: string }[];
 }
 
-export default CalendarView;
+const Calendar: React.FC<CalendarViewProps> = ({ events }) => {
+  return (
+    <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)' }}>
+      <FullCalendar
+        plugins={[dayGridPlugin]}
+        initialView="dayGridMonth"
+        events={events}
+        height="auto"
+      />
+    </div>
+  );
+};
+
+export default Calendar;

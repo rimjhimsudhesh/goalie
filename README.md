@@ -47,7 +47,7 @@ cd goalie
 npm install
 npm run dev`
 
-📋 API Example
+API Example
 POST /createPlan
 
 json

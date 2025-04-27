@@ -8,13 +8,26 @@ type Friend = {
   isActive: boolean
 }
 
+
+
 const FriendsActivity: React.FC = () => {
+  function addIng(word: string): string {
+    if (word.endsWith("e") && word !== "be") {
+      return word.slice(0, -1) + "ing"; // make "dance" -> "dancing"
+    }
+    if (word.endsWith("run")) {
+      return "running"; // special fix for "run"
+    }
+    return word + "ing";
+  }
+
+
   const mockData: Friend[] = [
     { name: "Alex", avatarColor: "green", activity: "run", isActive: true },
     { name: "Sam", avatarColor: "blue", activity: "read", isActive: false },
-    { name: "Taylor", avatarColor: "pink", activity: "piano", isActive: false },
-    { name: "Jamie", avatarColor: "pink", activity: "hello", isActive: true },
-    { name: "Morgan", avatarColor: "blue", activity: "hi", isActive: false }
+    { name: "Taylor", avatarColor: "pink", activity: "crochet", isActive: false },
+    { name: "Jamie", avatarColor: "pink", activity: "walk", isActive: true },
+    { name: "Morgan", avatarColor: "blue", activity: "jump rope", isActive: false }
   ]
 
   return (
@@ -27,7 +40,7 @@ const FriendsActivity: React.FC = () => {
         <div key={idx} className="friend-activity-row">
           <div className={`avatar ${friend.avatarColor}`}></div>
           <div className="activity-label">
-            {`${friend.activity}ing`}
+            {addIng(friend.activity)}
           </div>
         </div>
       )
@@ -41,7 +54,7 @@ const FriendsActivity: React.FC = () => {
         <div key={idx} className="friend-activity-row">
           <div className={`avatar ${friend.avatarColor}`}></div>
           <div className="reminder-text">
-            remind {friend.name.toLowerCase()} to {friend.activity} today
+            remind {friend.name} to {friend.activity} today
           </div>
         </div>
       )

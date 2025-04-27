@@ -28,6 +28,7 @@
   padding: 16px;
   border-radius: 8px;
   border: 1px solid #ddd;
+  display: block;
 }
 
 .streaks-section {
@@ -36,6 +37,7 @@
   padding: 16px;
   border-radius: 8px;
   border: 1px solid #ddd;
+  display: block;
 }
 
 /* Bottom for Friend Activity */

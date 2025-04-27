@@ -30,19 +30,21 @@
   }
   
   .avatar.green {
-    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/woman-avatar.png);
+    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/avatar.png);
     background-size: cover;
     background-position: center;
   }
   
   .avatar.blue {
-    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/man-avatar.png);
+    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/avatar.png);
     background-size: cover;
     background-position: center;
   }
   
   .avatar.pink {
-    background-color: #E91E63;
+    background-image: url(/Users/rimjhimsudhesh/goalie/goalie/src/images/avatar.png);
+    background-size: cover;
+    background-position: center;
   }
   
   .activity-label {
@@ -56,7 +58,7 @@
   
   .reminder-text {
     font-size: 14px;
-    color: black;
+    color: red;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

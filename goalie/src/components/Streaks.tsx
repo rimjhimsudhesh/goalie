@@ -4,7 +4,7 @@ import './Streaks.css';
 const Streaks: React.FC = () => {
     return (
         <div className="streaks-container">
-            <h3> # day streak 🔥</h3>
+            <h3> 5 day streak 🔥</h3>
 
             <div className="streak-item">
                 <div className="hobby-name">Running</div>

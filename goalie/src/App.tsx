@@ -2,6 +2,7 @@ import React from 'react'
 import CalendarView from './components/Calendar'
 import Streaks from './components/Streaks'
 import FriendActivity from './components/FriendsActivity'
+import Dropdown from './components/Dropdown'
 import './App.css'
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
           <CalendarView />
         </div>
         <div className="streaks-section">
+          <Dropdown />
           <Streaks />
         </div>
       </div>

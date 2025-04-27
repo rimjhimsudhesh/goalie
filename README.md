@@ -1,6 +1,6 @@
 # goalie
 
-# 🗓️ AI-Generated Personal Planning Calendar
+# AI-Generated Personal Planning Calendar
 
 This project uses Amazon Bedrock (Claude 3), AWS Lambda, API Gateway, and DynamoDB to generate **personalized weekly plans** based on user-selected hobbies.  
 The generated activities are mapped to a calendar-style frontend for users to visualize and act on their goals!
